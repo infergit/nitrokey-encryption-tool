@@ -25,6 +25,7 @@ except:
         return logging.getLogger('main')
     pkcs_module_path = ['/usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so', '/usr/local/lib/pkcs11/opensc-pkcs11.so',
                         '/usr/lib64/pkcs11/opensc-pkcs11.so', # Fedora
+                        '/opt/homebrew/lib/opensc-pkcs11.so', # Mac, brew
                         ]
 
 # consts for 4096
